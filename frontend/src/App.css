@@ -1,0 +1,151 @@
+:root {
+    font-family: Inter, system-ui, sans-serif;
+    color: #e8edf6;
+    background: #101521;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  button,
+  textarea {
+    font: inherit;
+  }
+  
+  .app {
+    width: min(1000px, 92%);
+    margin: 40px auto;
+  }
+  
+  .header,
+  .section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  
+  .header {
+    margin-bottom: 28px;
+  }
+  
+  h1 {
+    margin: 4px 0;
+    font-size: 36px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .eyebrow,
+  .muted {
+    color: #a0abc0;
+  }
+  
+  .eyebrow {
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+  
+  .panel {
+    padding: 24px;
+    margin-bottom: 20px;
+    background: #1a2232;
+    border: 1px solid #303a4d;
+    border-radius: 16px;
+  }
+  
+  textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    padding: 14px;
+    margin: 12px 0;
+    color: inherit;
+    background: #111827;
+    border: 1px solid #45516a;
+    border-radius: 10px;
+  }
+  
+  button {
+    padding: 12px 18px;
+    color: white;
+    background: #3867e8;
+    border: 0;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .status {
+    padding: 6px 10px;
+    border: 1px solid #45516a;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  
+  .actions {
+    padding-left: 28px;
+  }
+  
+  .actions li {
+    padding: 12px 0;
+    border-bottom: 1px solid #303a4d;
+  }
+  
+  .actions li > div {
+    display: inline-block;
+    width: 75%;
+  }
+  
+  .actions li > span {
+    color: #a0abc0;
+    font-size: 12px;
+  }
+  
+  .actions p {
+    margin-bottom: 0;
+    color: #a0abc0;
+  }
+  
+  .architecture {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .architecture span {
+    padding: 10px 12px;
+    background: #111827;
+    border: 1px solid #45516a;
+    border-radius: 8px;
+  }
+  
+  .error {
+    color: #ff9292;
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .panel {
+      padding: 16px;
+    }
+  }

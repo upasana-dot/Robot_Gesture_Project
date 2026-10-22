@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-dotenv
+transformers
+sentencepiece
+torch
+pybullet-arm64
+pytest
+httpx
